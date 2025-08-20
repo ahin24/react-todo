@@ -1,14 +1,17 @@
-import { useState } from 'react'
 import './App.css'
 import TodoList from './components/TodoList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const todos = [
+    { id: 1, text: 'Learn React', completed: false },
+    { id: 2, text: 'Build a Todo App', completed: false },
+  ];
 
   return (
     <>
       <div>
-        <h1>Hello world</h1>
+        <h1>Todo App</h1>
+        <TodoList todos={todos} />
       </div>
     </>
   )
