@@ -23,6 +23,10 @@ Whenever setTodos is called → React redraws the UI with the new list.
 
 👉 Without state, we couldn’t add/remove tasks dynamically.
 
+const [stateVariable, setStateVariable] = useState(initialValue);
+
+
+
 # Hooks
 What are Hooks?
 
